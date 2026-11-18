@@ -1,0 +1,7 @@
+flowchart TD
+    U[Usuário] --> FE[Front-end]
+    FE --> API[API / Back-end]
+    API <--> DB[(Banco de Dados)]
+    API -. integração futura .-> IA[Agente de IA]
+    IA -. eventos e solicitações .-> N8N[n8n]
+    N8N -. automações e alertas .-> U
